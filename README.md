@@ -23,16 +23,16 @@ $ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-p
 ```
 
 ```
-$ ln -s .bash_profile ~/.bash_profile
-$ ln -s .bashrc ~/.bashrc
-$ ln -s .vim ~/.vim
-$ ln -s .vimrc ~/.vimrc
+$ ln -s $PWD/.bash_profile ~/.bash_profile
+$ ln -s $PWD/.bashrc ~/.bashrc
+$ ln -s $PWD/.vim ~/.vim
+$ ln -s $PWD/.vimrc ~/.vimrc
 ```
 
 ```
 $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 $ sh ./installer.sh .vim/dein
-$ vim ~/vimrc
+$ vim ~/.vimrc
 ```
 
 ```
