@@ -14,14 +14,22 @@ if dein#load_state('~/.vim/dein')
   " Required:
   call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('Shougo/unite.vim')
   call dein#add('Shougo/neocomplete.vim')
   call dein#add('Shougo/neomru.vim')
   call dein#add('Shougo/neosnippet')
 
   call dein#add('tomasr/molokai')
 
+  " file
+  call dein#add('mechatroner/rainbow_csv')
+
   " php
   call dein#add('flyinshadow/php_localvarcheck.vim')
+
+  " Git
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('airblade/vim-gitgutter')
 
   " Required:
   call dein#end()
@@ -69,6 +77,7 @@ set pumheight=10
 set showmatch
 set matchtime=1
 
+set number
 
 "-----------------------------------------
 " file
@@ -125,9 +134,9 @@ let g:sql_type_default  = 'pgsql'
 " motion
 
 " tab & indent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+"set tabstop=4
+"set shiftwidth=4
+"set softtabstop=4
 set expandtab
 set autoindent
 
@@ -181,3 +190,6 @@ nnoremap <silent> ,y :<C-u>Unite history/yank<CR>
 " php_localvarcheck
 let g:php_localvarcheck_enable = 1
 let g:php_localvarcheck_global = 0
+
+" vim-gitgutter
+let g:gitgutter_highlight_lines = 1
