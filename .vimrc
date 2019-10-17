@@ -95,7 +95,7 @@ augroup END
 " encoding
 set fileformats=unix,dos,mac
 set encoding=utf-8
-set fileencodings=iso-2022-jp,sjis
+set fileencodings=utf-8,iso-2022-jp,sjis
 
 " 日本語を含まない場合は fileencoding に encoding を使うようにする
 if has('autocmd')
@@ -190,6 +190,3 @@ nnoremap <silent> ,y :<C-u>Unite history/yank<CR>
 " php_localvarcheck
 let g:php_localvarcheck_enable = 1
 let g:php_localvarcheck_global = 0
-
-" vim-gitgutter
-let g:gitgutter_highlight_lines = 1
