@@ -17,7 +17,6 @@ if dein#load_state('~/.vim/dein')
   call dein#add('Shougo/unite.vim')
   call dein#add('Shougo/neocomplete.vim')
   call dein#add('Shougo/neomru.vim')
-  call dein#add('Shougo/neosnippet')
   call dein#add('Shougo/neoyank.vim')
 
   call dein#add('tomasr/molokai')
