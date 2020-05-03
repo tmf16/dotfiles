@@ -18,6 +18,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('Shougo/neocomplete.vim')
   call dein#add('Shougo/neomru.vim')
   call dein#add('Shougo/neosnippet')
+  call dein#add('Shougo/neoyank.vim')
 
   call dein#add('tomasr/molokai')
 
@@ -183,8 +184,6 @@ nnoremap <silent> ,f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,r :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> ,m :<C-u>Unite file_mru<CR>
 nnoremap <silent> ,a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
-
-let g:unite_source_history_yank_enable = 1
 nnoremap <silent> ,y :<C-u>Unite history/yank<CR>
 
 " php_localvarcheck
