@@ -12,7 +12,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 $ git clone git@github.com:tmf16/dotfiles.git
 ```
 
-## setup(bash & vim)
+## setup(zsh & vim)
 
 ```
 $ cd dotfiles
