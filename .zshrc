@@ -62,3 +62,13 @@ RPROMPT='[%F{green}%d%f]'
 ## Aliasの設定
 alias la='ls -la -G'
 alias ll='ls -l -G'
+
+history_grep() {
+    if [ -z "$*" ]
+    then
+        history 1
+    else
+        history 1 | egrep "$@"
+    fi
+}
+alias hg=history_grep
